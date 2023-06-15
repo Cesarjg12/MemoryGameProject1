@@ -33,10 +33,9 @@ This where all the code goes.
 * Gonna need Declare Winner when game done
 * Gonna need to establish the play again
 
-* Gonna need to link the cards to be all shown for 20 seconds when the button starts (Play again/Play button)
-
 BONUS: 
 * Make cards randomized order every time they click Play again (This way it prevents them from being "Stale" same position)
+* Gonna need to link the cards to be all shown for 20 seconds when the button starts (Play again/Play button)
 * (Developer note: We probably want just one button. Figure it out!)*
 * Gonna need to link a timer to button.
 
