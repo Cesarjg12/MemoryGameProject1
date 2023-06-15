@@ -28,5 +28,17 @@ Gonna need eventlisteners for buttons as well.
 Gonna need to link a timer to button.
 Gonna need to link the cards to be all shown for 20 seconds when the button starts (Play again/Play button)
 
-*(Author note: We probably want just one button. Figure it out!)*
+*(Developer note: We probably want just one button. Figure it out!)*
 
+Gonna need Declare Winner when game done
+Gonna need to establish the play again
+
+
+BONUS: Make cards randomized order every time they click Play again (This way it prevents them from being "Stale" same position)
+
+
+
+IN INDEX:
+
+This is where we label everything we want to add
+Our "board", our cards, our button name, etc 
