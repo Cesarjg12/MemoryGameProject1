@@ -6,7 +6,7 @@ IN CSS:
 
 * Will handle all the margins/paddings/texts/images/colors/fonts etc
 
-*add the style for the cards (shape,image etc.)
+* add the style for the cards (shape,image etc.)
 add the cards being able to show a back side and front side (Add a flip)
 add background
 add TWO buttons: One button to start the game --> Will start a 20 sec timer. Second button the initiate play again.
@@ -23,20 +23,20 @@ IN JS:
 
 This where all the code goes.
 
-*Gonna need eventlisteners for everytime the user clicks on a card, wrong or right, (else if statements)
-*Gonna need eventlisteners for buttons as well.
-*Gonna need Declare Winner when game done
-*Gonna need to establish the play again
+* Gonna need eventlisteners for everytime the user clicks on a card, wrong or right, (else if statements)
+* Gonna need eventlisteners for buttons as well.
+* Gonna need Declare Winner when game done
+* Gonna need to establish the play again
 
-*Gonna need to link the cards to be all shown for 20 seconds when the button starts (Play again/Play button)
+* Gonna need to link the cards to be all shown for 20 seconds when the button starts (Play again/Play button)
 
 BONUS: 
-*Make cards randomized order every time they click Play again (This way it prevents them from being "Stale" same position)
-*(Developer note: We probably want just one button. Figure it out!)*
-*Gonna need to link a timer to button.
+* Make cards randomized order every time they click Play again (This way it prevents them from being "Stale" same position)
+* (Developer note: We probably want just one button. Figure it out!)*
+* Gonna need to link a timer to button.
 
 
 IN INDEX:
 
-*This is where we label everything we want to add
-*Our "board", our cards, our button name, etc 
+* This is where we label everything we want to add
+* Our "board", our cards, our button name, etc 
