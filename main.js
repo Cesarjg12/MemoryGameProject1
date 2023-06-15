@@ -38,7 +38,12 @@ playAgain.addEventListener('click',init)
 
 /*----- functions -----*/
 
-
+function pickCardWinner() {
+  if () {
+    
+  } else () {
+  
+  });
 
 
 
