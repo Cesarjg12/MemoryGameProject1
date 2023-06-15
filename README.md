@@ -4,7 +4,7 @@
 
 IN CSS:
 
-*Will handle all the margins/paddings/texts/images/colors/fonts etc
+* Will handle all the margins/paddings/texts/images/colors/fonts etc
 
 *add the style for the cards (shape,image etc.)
 add the cards being able to show a back side and front side (Add a flip)
