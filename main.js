@@ -39,10 +39,13 @@ playAgain.addEventListener('click',init)
 /*----- functions -----*/
 
 function pickCardWinner() {
-  if () {
-    
+  for () {
+    if ()
+      return();
+       
   } else () {
   
+  } return();
   });
 
 
@@ -50,7 +53,7 @@ function pickCardWinner() {
 
 //Winner function: 
 
-//Render a function to get win or have the cards go back, and allow player to reinitialize matching cards.
+//Render a function to show result if  win or have the cards go back, and allow player to reinitialize matching cards.
 
 function renderMessage () {
     if (winner === 'T') {
