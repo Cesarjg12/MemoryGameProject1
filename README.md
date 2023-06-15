@@ -14,9 +14,10 @@ IN CSS:
 BONUS:
 * Add cards that do match to stay flipped on the correct side (to prevent from clicking again)
 * add the cards being able to show a back side and front side (Add a flip)
-* * add TWO buttons: One button to start the game --> Will start a 20 sec timer. Second button the initiate play again.
-* Add randomizer of cards for every time they click Button 1 OR button 2 to either start game or play again. This would add a shufftle function for the cards, that way the cards are not in the same position.
-* Think about how to maybe initiate Button 1 & 2 together so you dont need 2 buttons.
+* Add randomizer of cards for every time they click Button 1 OR button 2 to either start game or play again.
+*  * This would add a shufftle function for the cards, that way the cards are not in the same position.
+* Add TWO buttons: One button to start the game --> Will start a 20 sec timer. Second button the initiate play again.
+* * Think about how to maybe initiate Button 1 & 2 together so you dont need 2 buttons.
 
 
 
