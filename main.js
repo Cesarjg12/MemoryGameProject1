@@ -8,21 +8,22 @@ const cards = {
 }
 //Const for when card 1 a matches card 2 a, card 3 b matches card 4 b. 
 const wins [
-  [1a = 2a],
-  [3b = 4b]
-]
+  ['box 1', 'box 2'],
+  ['box 3', 'box 4']
+];
 
 
 
 /*----- state variables -----*/
 //this allows the player to interact with board, get a result back and return with a matching pair.
 let board, turn, winner;
-
+let flippedCards = [];
+let matchedCards = [];
 
 /*----- cached elements  -----*/
 //This will use our variables h1 and button to show the text of h1 and button.
 
-const messageWin = document.querySelector('.cards');
+const messageWin = document.querySelector('.board');
 const playAgain = document.querySelector('button');
 const cardChooser = document.querySelectorAll('.card');
 
@@ -33,9 +34,58 @@ const cardChooser = document.querySelectorAll('.card');
 document.getElementById('board').addEventListener('click', playerTurn)
 playAgain.addEventListener('click', init)
 
-
+cardChooser.forEach(function(card) {
+  card.addEventListener('click', cardClickHandler);
+});
 
 /*----- functions -----*/
+
+function playerTurn(event){
+
+}
+
+function init(){
+
+
+}
+
+function cardClickHandler() {
+  const currentCard = this;
+  if (currentCard.classList.contains('matched')){
+    return; 'Matching pair'
+  }
+  if (flippedCards.length < 2) {
+    flipCard(currentCard);
+    flippedCards.push(currentCard);
+    
+    if (flippedCards.length === 2) {
+      setTimeout(checkMatch, 60);
+    }
+  }
+}
+
+function flipCard(card) {
+  card.classList.toggle('flipped');
+}
+
+function checkMatch() {
+  const card1 = flippedCards[0];
+  const card2 = flippedCards[1];
+
+  if (card1 === card2) {
+    card1.classList.add('matched');
+    card2.classList.add('matched');
+    matchedCards.push(card1, card2);
+
+    if (matchedCards.length === cards.length) {
+      showMessage('Nice! Matching Pair');
+    }
+  } else {
+    flipCard(card1);
+    flipCard(card2);
+  }
+  flippedCards = [];
+}
 
 function pickCardWinner() {
   for () {
