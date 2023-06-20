@@ -34,16 +34,21 @@ const cardChooser = document.querySelectorAll('.card');
 document.getElementById('board').addEventListener('click', playerTurn)
 playAgain.addEventListener('click', init)
 
+
+//Card choser allows us to run a for loop with card clicks (At least thats the idea)
 cardChooser.forEach(function(card) {
   card.addEventListener('click', cardClickHandler);
 });
 
 /*----- functions -----*/
 
+//Not really player turn but a way to have a match pair "end the session of the first card selected
+// may not even need this tbh"
 function playerTurn(event){
 
 }
 
+//Initialize the game
 function init(){
 
 
@@ -87,15 +92,15 @@ function checkMatch() {
   flippedCards = [];
 }
 
-function pickCardWinner() {
-  for () {
-    if ()
-      return();
+// function pickCardWinner() {
+//   for () {
+//     if ()
+//       return();
        
-  } else () {
+//   } else () {
   
-  } return();
-  });
+//   } return();
+//   });
 
 
 
