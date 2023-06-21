@@ -2,15 +2,15 @@
 
 //const for cards and their win and null option.
 
-const cards = {
-  '1': //card pair matches
-  'null': //card not matching pair
-}
-//Const for when card 1 a matches card 2 a, card 3 b matches card 4 b. 
-const wins [
-  ['box1', 'box2'],
-  ['box3', 'box4']
-];
+// const cards = {
+//   '1': //card pair matches
+//   'null': //card not matching pair
+// }
+// //Const for when card 1 a matches card 2 a, card 3 b matches card 4 b. 
+// const wins [
+//   ['box1', 'box2'],
+//   ['box3', 'box4']
+// ];
 
 
 
@@ -26,7 +26,11 @@ const playAgain = document.querySelector('button');
 const cardChooser = document.querySelectorAll('.card');
 
 /*----- event listeners -----*/
+const button = document.querySelector(".btn")
 
+button.addEventListener('click', ()=> {
+  console.log('button clicked');
+})
 
 
 
@@ -34,7 +38,19 @@ const cardChooser = document.querySelectorAll('.card');
 
 
 /*----- functions -----*/
+init();
 
+function init() {
+  board = [
+    [0,0],
+    [0,0],
+    [0,0],
+    [0,0]
+  ];
+  turn = 1;
+  winner= null;
+  render();
+}
 
 
 
