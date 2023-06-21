@@ -1,18 +1,10 @@
 /*----- constants -----*/
 
-//const for cards and their win and null option.
+// const for cards and their win and null option.
 
-// const cards = {
-//   '1': //card pair matches
-//   'null': //card not matching pair
-// }
-// //Const for when card 1 a matches card 2 a, card 3 b matches card 4 b. 
-// const wins [
-//   ['box1', 'box2'],
-//   ['box3', 'box4']
-// ];
-
-
+const cards = [ 'A', 'A', 'B', 'B']
+let flippedCards = [];
+let matchedCards = [];
 
 /*----- state variables -----*/
 //this allows the player to interact with board, get a result back and return with a matching pair.
