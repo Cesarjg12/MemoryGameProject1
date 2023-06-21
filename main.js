@@ -11,7 +11,7 @@ let matchedCards = [];
 
 
 const messageWin = document.querySelector('.board');
-const playAgain = document.querySelector('button');
+const playAgain = document.querySelector('.btn');
 const cardChooser = document.querySelectorAll('.card');
 
 
@@ -33,20 +33,30 @@ button.addEventListener('click', ()=> {
 init();
 
 function init() {
-  board = [
-    [0,0],
-    [0,0],
-    [0,0],
-    [0,0]
-  ];
-  turn = 1;
-  winner= null;
-  render();
+  flippedCards = [],
+  matchedCards = [],
+  (array).forEach(card => {
+    card.classList.remove(// want to have flip and match cards removed after restarting game.);
+    
+  });
+  cardShuffle();  //want to add a card shuffle
+}
+
+function cardShuffle() {
+  //add a for loop to make a card shuffle use math.floor and math random
+  for(let i =)
 }
 
 
+//Add a flip card function
+function flipCard() {
 
+}
 
+//Add a match function for when cards match to their pair.
+function matchedCards() {
+  
+}
 
 
 
