@@ -37,7 +37,7 @@ playAgain.addEventListener('click', init)
 
 //Card choser allows us to run a for loop with card clicks (At least thats the idea)
 cardChooser.forEach(function(card) {
-  card.addEventListener('click', cardClickHandler);
+  card.addEventListener('click', cardClick);
 });
 
 /*----- functions -----*/
@@ -54,7 +54,7 @@ function init(){
 
 }
 
-function cardClickHandler() {
+function cardClick() {
   const currentCard = this;
   if (currentCard.classList.contains('matched')){
     return; 'Matching pair'
