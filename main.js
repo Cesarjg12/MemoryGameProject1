@@ -8,8 +8,8 @@ const cards = {
 }
 //Const for when card 1 a matches card 2 a, card 3 b matches card 4 b. 
 const wins [
-  ['box 1', 'box 2'],
-  ['box 3', 'box 4']
+  ['box1', 'box2'],
+  ['box3', 'box4']
 ];
 
 
