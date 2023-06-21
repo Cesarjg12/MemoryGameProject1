@@ -1,21 +1,21 @@
 /*----- constants -----*/
-
-// const for cards and their win and null option.
-
 const cards = [ 'A', 'A', 'B', 'B']
 let flippedCards = [];
 let matchedCards = [];
 
 /*----- state variables -----*/
-//this allows the player to interact with board, get a result back and return with a matching pair.
+
 
 
 /*----- cached elements  -----*/
-//This will use our variables h1 and button to show the text of h1 and button.
+
 
 const messageWin = document.querySelector('.board');
 const playAgain = document.querySelector('button');
 const cardChooser = document.querySelectorAll('.card');
+
+
+
 
 /*----- event listeners -----*/
 const button = document.querySelector(".btn")
@@ -56,12 +56,17 @@ function init() {
 
 
 
-//Render a function to show result if  win or have the cards go back, and allow player to reinitialize matching cards.
 
-function renderMessage () {
-    if (winner === 'T') {
-        message.innerHTML = '';
-    } else if (winner) {
-        message.innerHTML = '';
-    }
-}
+
+
+
+
+// //Render a function to show result if  win or have the cards go back, and allow player to reinitialize matching cards.
+
+// function renderMessage () {
+//     if (winner === 'T') {
+//         message.innerHTML = '';
+//     } else if (winner) {
+//         message.innerHTML = '';
+//     }
+// }
