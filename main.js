@@ -69,9 +69,12 @@ function cardClickHandler() {
   }
 }
 
+
 function flipCard(card) {
   card.classList.toggle('flipped');
 }
+
+
 
 function checkMatch() {
   const card1 = flippedCards[0];
