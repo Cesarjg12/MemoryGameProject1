@@ -77,16 +77,17 @@ function checkMatch() {
   card1 = card1.getAttribute('data-card'); //to pull the cards "data-card=()"
   card2 = card2.getAttribute('data-card');
 console.log(flippedCards)
-//Make sures the cards are matched by the correct data-card using a classList to call upon it.
-  
-if (card1 === card2) [0, 1] { 
-    card1.classList.add('matched');
-    card2.classList.add('matched');
-    matchedCards.push(card1, card2)
-  }
-  if (matchedCards.length === cardChooser.length){
+
+// card1 = flippedCards[0]
+// card2 = flippedCards[1]
+// if (card1 === card2) [0, 1] { 
+//     card1.classList.add('matched');
+//     card2.classList.add('matched');
+//     matchedCards.push(card1, card2)
+//   }
+//   if (matchedCards.length === cardChooser.length){
     
-  }
+//   }
   
 }
 
