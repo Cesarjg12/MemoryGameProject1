@@ -22,7 +22,7 @@ const button = document.querySelector(".btn")
 button.addEventListener('click', ()=> {
   console.log('button clicked');
 })
-cardChooser.forEach(card = card.addEventListener('click', flipCard));
+cardChooser.forEach(cards = cards.addEventListener('click', flipCard));
 
 
 
@@ -34,8 +34,8 @@ init();
 function init() {
   flippedCards = [],
   matchedCards = [],
-  cardChooser.forEach(card => {
-    card.classList.remove('flipped', 'matched')  // want to have flip and match cards removed after restarting game.);
+  cardChooser.forEach(cards => {
+    cards.classList.remove('flipped', 'matched')  // want to have flip and match cards removed after restarting game.);
     });
   cardShuffle();  //want to add a card shuffle
 }
@@ -43,7 +43,7 @@ function init() {
 
 function cardShuffle() {
   //add a for loop to make a card shuffle use math.floor and math random
-  for(let i = cardChooser.length - 1; i > 0, i--) {
+  for(let i = cardChooser.length - 1; i > 0, i--;) {
     const shuffle = math.floor(math.random() * (i + 1));
   }
   return i
@@ -52,11 +52,11 @@ function cardShuffle() {
 
 //Add a flip card function
 function flipCard() {
-  if (card.classList.contains('flipped') || matchedCards.includes(card)) {
+  if (cards.classList.contains('flipped') || matchedCards.includes(cards)) {
     return;
   }
-  highlight(card);
-  flippedCards.push(card)
+  highlight(cards);
+  flippedCards.push(cards)
 
   if (flippedCards.length === 2) {
     checkMatch()
@@ -64,7 +64,7 @@ function flipCard() {
 }
 
 
-const highlight = (card) => {
+const highlight = (cards) => {
   card.classList.add('flipped', 'highlight');
 };
 
