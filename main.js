@@ -65,7 +65,7 @@ function flipCard() {
 
 
 const highlight = (cards) => {
-  card.classList.add('flipped', 'highlight');
+  cards.classList.add('flipped', 'highlight');
 };
 
 //Add a match function for when cards match to their pair.
