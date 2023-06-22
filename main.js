@@ -79,14 +79,14 @@ function checkMatch() {
 console.log(flippedCards)
 //Make sures the cards are matched by the correct data-card using a classList to call upon it.
   
-if flippedCards = [0,1] {
-//     card1.classList.add('matched');
-//     card2.classList.add('matched');
-//     matchedCards.push(card1, card2)
-//   }
-//   if (matchedCards.length === cardChooser.length){
+if (card1 === card2) [0, 1] { 
+    card1.classList.add('matched');
+    card2.classList.add('matched');
+    matchedCards.push(card1, card2)
+  }
+  if (matchedCards.length === cardChooser.length){
     
-//   }
+  }
   
 }
 
