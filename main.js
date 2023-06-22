@@ -52,8 +52,21 @@ function cardShuffle() {
 
 //Add a flip card function
 function flipCard() {
+  if (card.classList.contains('flipped') || matchedCards.includes(card)) {
+    return;
+  }
+  highlight(card);
+  flippedCards.push(card)
 
+  if (flippedCards.length === 2) {
+    checkMatch()
+  }
 }
+
+
+const highlight = (card) => {
+  card.classList.add('flipped', 'highlight');
+};
 
 //Add a match function for when cards match to their pair.
 function matchedCards() {
