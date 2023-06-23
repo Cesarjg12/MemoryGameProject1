@@ -91,6 +91,8 @@ if (flippedCards.length === 2) {
       clickedCard.classList.add('matched');
     });
     matchedCards.push(card1, card2);
+  resetCards();
+  gameEnds();
   } else {
     console.log('didnt match')
     setTimeout(() => {
@@ -105,15 +107,17 @@ if (flippedCards.length === 2) {
     }, 500);
     console.log('Hi')
   }
-  // resetCards();
 }
+}
+function resetCards() {
+    flippedCards = [];
+  }
+
+function gameEnds(){
 console.log('Hello')
   if (matchedCards.length === cardChooser.length) {
-    return alert("You matched all the pairs!");
-  }
-}
-  function resetCards() {
-    flippedCards = [];
+  return alert("You matched all the pairs!");
+   }
 }
 
 
