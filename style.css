@@ -73,6 +73,7 @@ button:hover {
 }
 
 .flipped {
+    background-color: orange;
     transform: rotateY('180deg');
 }
 
