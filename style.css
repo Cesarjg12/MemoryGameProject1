@@ -57,6 +57,14 @@ h1 {
     top: 100px;
     color: rgb(255, 255, 255)
 }
+h2 {
+    font-size: 100px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 100;
+    position: absolute;
+    color: rgb(255, 255, 255)
+}
 
 button {
     font-size: 25px;
