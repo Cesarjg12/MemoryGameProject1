@@ -105,9 +105,8 @@ function checkMatch() {
       resetCards();
       lostGame();
     }, 500);
-    
+    attempts++;
   }
-  attempts++;
 }
 function resetCards() {
     flippedCards = [];
@@ -123,7 +122,7 @@ console.log('Hello')
 
 function lostGame() {
   if (attempts >= 2) {
-  if (flippedCards.length === 2) {
+  // if (flippedCards.length === 2) {
     flippedCards.forEach(clickedCard => {
       clickedCard.classList.remove('flipped')
     });
@@ -131,5 +130,4 @@ function lostGame() {
     const messageLost = document.querySelector('h3')
     messageLost.innerHTML = 'Both attempts used try again!';
   }
-}
 }
