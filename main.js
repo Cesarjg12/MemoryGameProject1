@@ -100,18 +100,19 @@ if (flippedCards.length === 2) {
       clickedCard.classList.remove('flipped') //'highlight')
       // console.log('Hey')
       });
+      resetCards();
     }, 500);
   }
-}
-function resetCards() {
-  flippedCards = [];
-}
-  if (matchedCards.length === cardChooser.length){
-    return alert("You matched all the pairs!")
-  }
-  
+  // resetCards();
 }
 
+  if (matchedCards.length === cardChooser.length) {
+    return alert("You matched all the pairs!");
+  }
+}
+  function resetCards() {
+    flippedCards = [];
+}
 
 // card1 = flippedCards[0]
 // card2 = flippedCards[1]
