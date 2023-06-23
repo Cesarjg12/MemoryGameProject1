@@ -101,11 +101,13 @@ if (flippedCards.length === 2) {
       // console.log('Hey')
       });
       resetCards();
+      console.log('Hey')
     }, 500);
+    console.log('Hi')
   }
   // resetCards();
 }
-
+console.log('Hello')
   if (matchedCards.length === cardChooser.length) {
     return alert("You matched all the pairs!");
   }
@@ -113,6 +115,7 @@ if (flippedCards.length === 2) {
   function resetCards() {
     flippedCards = [];
 }
+
 
 // card1 = flippedCards[0]
 // card2 = flippedCards[1]
