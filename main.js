@@ -58,7 +58,7 @@ function flipCard(event) {
   if (clickedCard.classList.contains('flipped') || matchedCards.includes(clickedCard)) {
     return;
   }
-  highlight(clickedCard);
+  // highlight(clickedCard);
   flippedCards.push(clickedCard)
   highlight(clickedCard);
 
@@ -69,7 +69,7 @@ function flipCard(event) {
 
 
 const highlight = (cards) => {
-  cards.classList.add('flipped', 'highlight');
+cards.classList.add('flipped'); //'highlight');
 };
 
 //Add a match function for when cards match to their pair.
@@ -80,11 +80,11 @@ function checkMatch() {
   card1 = card1.getAttribute('data-card'); //to pull the cards "data-card=()"
   card2 = card2.getAttribute('data-card');
 console.log(flippedCards)
-
+console.log(card1, card2)
 
 if (flippedCards.length === 2) {
   if (card1 === card2){
-
+    console.log(flippedCards)
   // if (flippedCards[0].getAttribute('data-card')) === flippedCards[1].getAttribute('data-card') {
     flippedCards.forEach((clickedCard) => {
       clickedCard.classList.remove('flipped');
@@ -92,16 +92,20 @@ if (flippedCards.length === 2) {
     });
     matchedCards.push(card1, card2);
   } else {
+    console.log('didnt match')
     setTimeout(() => {
+      // console.log(flippedCards)
       flippedCards.forEach((clickedCard) => {
-        clickedCard.classList.remove('flipped', 'highlight')
+        // console.log('Hi')
+      clickedCard.classList.remove('flipped') //'highlight')
+      // console.log('Hey')
       });
     }, 500);
   }
 }
-
-flippedCards = [];
-
+function resetCards() {
+  flippedCards = [];
+}
   if (matchedCards.length === cardChooser.length){
     return alert("You matched all the pairs!")
   }
