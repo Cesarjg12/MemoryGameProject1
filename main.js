@@ -36,7 +36,7 @@ function init() {
   flippedCards = [],
   matchedCards = [],
   cardChooser.forEach(cards => {
-    cards.classList.remove('flipped', 'matched')  // want to have flip and match cards removed after restarting game.);
+    cards.classList.remove('flipped', 'matched', 'highlight');  // want to have flip and match cards removed after restarting game.);
     });
   // cardShuffle();  //want to add a card shuffle
 }
@@ -58,8 +58,9 @@ function flipCard(event) {
   if (clickedCard.classList.contains('flipped') || matchedCards.includes(clickedCard)) {
     return;
   }
-  // highlight(cards);
+  highlight(clickedCard);
   flippedCards.push(clickedCard)
+  highlight(clickedCard);
 
   if (flippedCards.length === 2) {
     checkMatch()
@@ -78,6 +79,34 @@ function checkMatch() {
   card2 = card2.getAttribute('data-card');
 console.log(flippedCards)
 
+
+if (flippedCards.length === 2) {
+  if (card1 === card2){
+
+  // if (flippedCards[0].getAttribute('data-card')) === flippedCards[1].getAttribute('data-card') {
+    flippedCards.forEach((clickedCard) => {
+      clickedCard.classList.remove('flipped');
+      clickedCard.classList.add('matched');
+    });
+    matchedCards.push(card1, card2);
+  } else {
+    setTimeout(() => {
+      flippedCards.forEach((clickedCard) => {
+        clickedCard.classList.remove('flipped', 'highlight')
+      });
+    }, 500);
+  }
+}
+
+flippedCards = [];
+
+  if (matchedCards.length === cardChooser.length){
+    return alert("You matched all the pairs!")
+  }
+  
+}
+
+
 // card1 = flippedCards[0]
 // card2 = flippedCards[1]
 // if (card1 === card2) [0, 1] { 
@@ -85,13 +114,6 @@ console.log(flippedCards)
 //     card2.classList.add('matched');
 //     matchedCards.push(card1, card2)
 //   }
-//   if (matchedCards.length === cardChooser.length){
-    
-//   }
-  
-}
-
-
 
 
 
