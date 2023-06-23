@@ -73,6 +73,8 @@ const highlight = (cards) => {
 };
 
 //Add a match function for when cards match to their pair.
+
+
 function checkMatch() {
   let [card1, card2] = flippedCards;
   card1 = card1.getAttribute('data-card'); //to pull the cards "data-card=()"
