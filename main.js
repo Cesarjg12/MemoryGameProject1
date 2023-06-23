@@ -5,6 +5,7 @@ const cards = [ 'A', 'A', 'B', 'B']
 
 let flippedCards = [];
 let matchedCards = [];
+let attempts = 0;
 
 /*----- cached elements  -----*/
 
@@ -12,7 +13,7 @@ let matchedCards = [];
 const messageWin = document.querySelector('h2');
 const playAgain = document.querySelector('.btn');
 const cardChooser = document.querySelectorAll('.card');
-
+const messageLost = document.querySelector('h3');
 
 
 
@@ -54,7 +55,7 @@ function init() {
 //Add a flip card function
 function flipCard(event) {
   console.log(event.target)
-  const clickedCard = event.target
+  const clickedCard = event.target;
   if (clickedCard.classList.contains('flipped') || matchedCards.includes(clickedCard)) {
     return;
   }
@@ -63,7 +64,7 @@ function flipCard(event) {
   highlight(clickedCard);
 
   if (flippedCards.length === 2) {
-    checkMatch()
+    checkMatch();
   }
 }
 
@@ -82,7 +83,7 @@ function checkMatch() {
 
 
 
-if (flippedCards.length === 2) {
+// if (flippedCards.length === 2) {
   if (card1 === card2){
     
     flippedCards.forEach((clickedCard) => {
@@ -102,11 +103,11 @@ if (flippedCards.length === 2) {
     
       });
       resetCards();
-      
+      lostGame();
     }, 500);
     
   }
-}
+  attempts++;
 }
 function resetCards() {
     flippedCards = [];
@@ -118,4 +119,17 @@ console.log('Hello')
     const messageWin = document.querySelector('h2');
     messageWin.innerHTML = 'You matched all the pairs!';
    }
+}
+
+function lostGame() {
+  if (attempts >= 2) {
+  if (flippedCards.length === 2) {
+    flippedCards.forEach(clickedCard => {
+      clickedCard.classList.remove('flipped')
+    });
+    resetCards();
+    const messageLost = document.querySelector('h3')
+    messageLost.innerHTML = 'Both attempts used try again!';
+  }
+}
 }
