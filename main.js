@@ -115,7 +115,7 @@ function resetCards() {
 function gameEnds(){
 console.log('Hello')
   if (matchedCards.length === cardChooser.length) {
-    const messageWin = document.querySelector('.board'); //change it from .board to like a h2 and create h2.
+    const messageWin = document.querySelector('.board'); //change it from .board to like a h2 and create h2
     messageWin.innerHTML = 'You matched all the pairs!';
    }
 }
