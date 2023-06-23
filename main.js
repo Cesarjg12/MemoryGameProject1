@@ -79,13 +79,12 @@ function checkMatch() {
   let [card1, card2] = flippedCards;
   card1 = card1.getAttribute('data-card'); //to pull the cards "data-card=()"
   card2 = card2.getAttribute('data-card');
-console.log(flippedCards)
-console.log(card1, card2)
+
+
 
 if (flippedCards.length === 2) {
   if (card1 === card2){
-    console.log(flippedCards)
-  // if (flippedCards[0].getAttribute('data-card')) === flippedCards[1].getAttribute('data-card') {
+    
     flippedCards.forEach((clickedCard) => {
       clickedCard.classList.remove('flipped');
       clickedCard.classList.add('matched');
@@ -94,18 +93,18 @@ if (flippedCards.length === 2) {
   resetCards();
   gameEnds();
   } else {
-    console.log('didnt match')
+   
     setTimeout(() => {
-      // console.log(flippedCards)
+    
       flippedCards.forEach((clickedCard) => {
-        // console.log('Hi')
-      clickedCard.classList.remove('flipped') //'highlight')
-      // console.log('Hey')
+      
+      clickedCard.classList.remove('flipped')
+    
       });
       resetCards();
-      console.log('Hey')
+      
     }, 500);
-    console.log('Hi')
+    
   }
 }
 }
@@ -119,33 +118,3 @@ console.log('Hello')
   return alert("You matched all the pairs!");
    }
 }
-
-
-// card1 = flippedCards[0]
-// card2 = flippedCards[1]
-// if (card1 === card2) [0, 1] { 
-//     card1.classList.add('matched');
-//     card2.classList.add('matched');
-//     matchedCards.push(card1, card2)
-//   }
-
-
-
-
-
-
-
-
-
-
-
-
-// //Render a function to show result if  win or have the cards go back, and allow player to reinitialize matching cards.
-
-// function renderMessage () {
-//     if (winner === 'T') {
-//         message.innerHTML = '';
-//     } else if (winner) {
-//         message.innerHTML = '';
-//     }
-// }
