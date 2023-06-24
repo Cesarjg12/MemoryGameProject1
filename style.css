@@ -39,6 +39,16 @@ body {
     background-color: yellow
   }
   
+  .card[data-card]::after {
+    content: attr(data-card);
+    display: none;
+  }
+  
+  .card.flipped[data-card]::after {
+    display: block;
+  }
+
+  
   header {
     font-size: 75px;
     text-align: center;

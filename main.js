@@ -126,13 +126,13 @@ function gameEnds() {
 }
 
 function lostGame() {
-  if (attempts >= 4) {
+  if (attempts >= 6) {
     // if (flippedCards.length === 2) {
     flippedCards.forEach(clickedCard => {
       clickedCard.classList.remove('flipped')
     });
     resetCards();
     const messageLost = document.querySelector('h3')
-    messageLost.innerHTML = '4 attempts used! Try again!';
+    messageLost.innerHTML = '6 attempts used! Try again!';
   }
 }
