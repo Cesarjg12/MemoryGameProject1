@@ -39,17 +39,18 @@ function init() {
     cardChooser.forEach(cards => {
       cards.classList.remove('flipped', 'matched', 'highlight');  // want to have flip and match cards removed after restarting game.);
     });
-  // cardShuffle();  //want to add a card shuffle
+    cardShuffle();  //want to add a card shuffle
 }
 
 
-// function cardShuffle() {
-//   //add a for loop to make a card shuffle use math.floor and math random
-//   for(let i = cardChooser.length - 1; i > 0, i--;) {
-//     const shuffle = math.floor(math.random() * (i + 1));
-//   }
-//   return i
-// }
+function cardShuffle() {
+  //add a for loop to make a card shuffle use math.floor and math random
+  for(let i = cardChooser.length - 1; i > 0, i--;) {
+    const shuffle = Math.floor(Math.random() * (i + 1));
+    [cardChooser[i].innerHTML, cardChooser[shuffle].innerHTML] = [cardChooser[shuffle].innerHTML, cardChooser[i].innerHTML];
+    [cardChooser[i].dataset.card, cardChooser[shuffle].dataset.card] = [cardChooser[shuffle].dataset.card, cardChooser[i].dataset.card];
+  }
+}
 
 
 //Add a flip card function
@@ -59,7 +60,7 @@ function flipCard(event) {
   if (clickedCard.classList.contains('flipped') || matchedCards.includes(clickedCard)) {
     return;
   }
-  // highlight(clickedCard);
+  highlight(clickedCard);
   flippedCards.push(clickedCard)
   highlight(clickedCard);
 
@@ -69,7 +70,8 @@ function flipCard(event) {
 }
 
 
-const highlight = (cards) => {
+// const highlight = (cards) => {
+  function highlight(cards) {
   cards.classList.add('flipped'); //'highlight');
 };
 
