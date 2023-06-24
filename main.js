@@ -42,6 +42,7 @@ function init() {
     cardShuffle();  //want to add a card shuffle
 }
 
+//Got the shuffle function from Fisher-Yates Alogirthm.
 
 function cardShuffle() {
   //add a for loop to make a card shuffle use math.floor and math random
