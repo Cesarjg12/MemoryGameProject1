@@ -133,6 +133,6 @@ function lostGame() {
     });
     resetCards();
     const messageLost = document.querySelector('h3')
-    messageLost.innerHTML = '4 attempts used try again!';
+    messageLost.innerHTML = '4 attempts used! Try again!';
   }
 }
