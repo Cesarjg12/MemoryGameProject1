@@ -5,11 +5,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-
-.board {
+  }
+  
+  
+  
+  .board {
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -18,10 +18,9 @@ body {
     justify-items: center;
     align-items: center;
     margin: auto;
-}
-
-.card,
-.back-card {
+  }
+  
+  .card {
     background-color: rgba(37, 34, 200, 0.84);
     padding: 10px;
     text-align: center;
@@ -34,30 +33,22 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
-}
-
-.card:hover {
+  }
+  
+  .card:hover {
     background-color: yellow
-}
-
-.back-card{
-  transform-style: preserve-3d;
-  position: absolute;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
-  transition: transform 0.5s;
-}
-
-header {
+  }
+  
+  header {
     font-size: 75px;
     text-align: center;
     font-style: italic;
     font-weight: 100;
     position: absolute;
     top: 25px;
-}
-
-h1 {
+  }
+  
+  h1 {
     font-size: 40px;
     text-align: center;
     font-style: italic;
@@ -65,55 +56,56 @@ h1 {
     position: absolute;
     top: 70px;
     color: rgb(255, 255, 255)
-}
-h2 {
+  }
+  
+  h2 {
     font-size: 100px;
     text-align: center;
     font-style: italic;
     font-weight: 100;
     position: absolute;
     color: rgb(5, 154, 97)
-}
-
-h3 {
+  }
+  
+  h3 {
     font-size: 100px;
     text-align: center;
     font-style: italic;
     font-weight: 100;
     position: absolute;
     color: rgb(178, 11, 42)
-}
-
-h4 { font-size: 20px;
+  }
+  
+  h4 {
+    font-size: 20px;
     text-align: center;
     font-style: italic;
     font-weight: 100;
     position: absolute;
     top: 105px;
     color: rgb(225, 78, 49)
-
-}
-
-button {
+  }
+  
+  button {
     font-size: 25px;
-    background-color:aquamarine;
+    background-color: aquamarine;
     position: absolute;
     bottom: 20px;
     left: 20px;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     color: aquamarine;
     background-color: black;
     cursor: pointer;
-}
-
-.flipped {
+  }
+  
+  .flipped {
     background-color: orange;
-    transform: rotateY(180deg);
-}
-
-.matched {
+    transform: rotateY('180deg');
+  }
+  
+  .matched {
     background-color: black;
     pointer-events: none;
-}
+  }
