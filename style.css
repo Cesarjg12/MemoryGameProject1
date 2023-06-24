@@ -20,7 +20,8 @@ body {
     margin: auto;
 }
 
-.card {
+.card,
+.back-card {
     background-color: rgba(37, 34, 200, 0.84);
     padding: 10px;
     text-align: center;
@@ -37,6 +38,14 @@ body {
 
 .card:hover {
     background-color: yellow
+}
+
+.back-card{
+  transform-style: preserve-3d;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
 }
 
 header {
@@ -101,7 +110,7 @@ button:hover {
 
 .flipped {
     background-color: orange;
-    transform: rotateY('180deg');
+    transform: rotateY(180deg);
 }
 
 .matched {
