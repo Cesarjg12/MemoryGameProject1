@@ -58,9 +58,9 @@ function gameEnds() {
 
 ---
 ## Tech Used
-![HTML]
-![CSS]
-![Javascript]
+* HTML
+* CSS
+* Javascript
 ---
 
 ## Future Steps
