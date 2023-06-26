@@ -17,18 +17,18 @@
 
 ---
 ## How the start of the game looks
-![Game Start](images/StartGame.png) 
+![Game Start](Images/StartGame.png) 
 ---
 
 ---
 ## Game in Progress
-![A Game in progress](images/SuccessfulMatch.png)
+![A Game in progress](Images/SuccessfulMatch.png)
 ---
 ---
 ## WIN/LOST GAME
-![Winning Game](images/WinGame.png)
+![Winning Game](Images/WinGame.png)
 ---
-![Lost Game](images/LostGame.png)
+![Lost Game](Images/LostGame.png)
 ---
 ---
 ## Code Preview
