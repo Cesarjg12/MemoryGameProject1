@@ -1,48 +1,71 @@
-# MemoryGame Project1
-[Link to wireframes](https://whimsical.com/memory-game-3LmjFSi7nZwtcEvAQoJ3MC)
+# Memory-Concentration-Game/Project 1
 
+## [Link to Game](https://cesarjg12.github.io/MemoryGameProject1/)
 
-IN CSS:
+---
 
-* Will handle all the margins/paddings/texts/images/colors/fonts etc
-* add the style for the cards (shape,image etc.)
-* add background
-* Add title along first button (either above or next to it, will see which one looks more appealing)
-* Add a "Congratulation text upon winning" 
+## How to Play
+1. Click the link above. This will direct you to the game in your browser.
+2. Make sure to read the rules, you have 6 attempts before a lost game.
+3. Click the cards and start matching the correct letters on the cards to their pair.
+4. When you hover over a card it will turn yellow, and orange after you click it (Be sure to move your mouse from hovering it to see the orange color.)
+5. After you clicked one card it will remain orange until you click another card.
+6. If the second card you click matches the first card it will automatically turn black.
+7. Keep on clicking the cards until you matched the whole board for a successful win.
+8. If you happen to lose or wish to try again simply click the refresh page on your browser and try again!
+9. Be sure to have fun and enjoy yourself!
 
+---
+## How the start of the game looks
+![Game Start](images/StartGame.png)
+---
 
-BONUS:
-* Add the cards being able to show a back side and front side (Add a flip)
-* * Add cards that do match to stay flipped on the correct side (to prevent from clicking again)
-    
-* Add randomizer of cards for every time they click Button 1 OR button 2 to either start game or play again.
-*  * This would add a shufftle function for the cards, that way the cards are not in the same position.
-     
-* Add TWO buttons: One button to start the game --> Will start a 20 sec timer. Second button the initiate play again.
-* * Think about how to maybe initiate Button 1 & 2 together so you dont need 2 buttons.
+---
+## Game in Progress
+![A Game in progress](images/SuccessfulMatch.png)
+---
+---
+## WIN/LOST GAME
+![Winning Game](images/WinGame.png)
+---
+![Lost Game](images/LostGame.png)
+---
+---
+## Code Preview
 
+```js
+function gameEnds() {
+  console.log('Hello')
+  if (matchedCards.length === cardChooser.length) {
+    const messageWin = document.querySelector('h2');
+    messageWin.innerHTML = 'You matched all the pairs!';
+  }
+```
 
+```js
+  function lostGame() {
+  if (attempts >= 6) {
+    // if (flippedCards.length === 2) {
+    flippedCards.forEach(clickedCard => {
+      clickedCard.classList.remove('flipped')
+    });
+    resetCards();
+    const messageLost = document.querySelector('h3')
+    messageLost.innerHTML = '6 attempts used! Try again!';
+  }
+}
+```
 
+---
+## Tech Used
+![HTML]
+![CSS]
+![Javascript]
+---
 
-IN JS:
-
-This where all the code goes.
-
-* Gonna need eventlisteners for everytime the user clicks on a card, wrong or right, (else if statements)
-* Gonna need eventlisteners for buttons as well.
-* Gonna need Declare Winner when game done
-* Gonna need to establish the play again
-
-BONUS: 
-* Make cards randomized order every time they click Play again (This way it prevents them from being "Stale" same position)
-* Gonna need to link the cards to be all shown for 20 seconds when the button starts (Play again/Play button)
-* (Developer note: We probably want just one button. Figure it out!)*
-* Gonna need to link a timer to button.
-
-
-
-
-IN INDEX:
-
-* This is where we label everything we want to add
-* Our "board", our cards, our button name, etc 
+## Future Steps
+* Fix the reset button
+* Add pictures
+* Make sounds for the flip(s)
+* Create a timer
+* Creat a Highscore board and increase number of cards
