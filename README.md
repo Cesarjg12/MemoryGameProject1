@@ -17,7 +17,7 @@
 
 ---
 ## How the start of the game looks
-![Game Start](images/StartGame.png)
+![Game Start](images/StartGame.png) 
 ---
 
 ---
